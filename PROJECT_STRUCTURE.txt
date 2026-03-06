@@ -1,0 +1,150 @@
+================================================================================
+HIDDEN MARKOV MODEL - HUMAN ACTIVITY RECOGNITION
+Project Structure
+================================================================================
+
+Formative-2-Hidden-Markov-Models/
+│
+├── data/                                   # Raw sensor data directory
+│   ├── member1/                           # First team member's data
+│   │   ├── metadata.txt                   # Phone model, sampling rate info
+│   │   ├── standing/                      # Standing activity recordings
+│   │   │   ├── standing_001.csv
+│   │   │   ├── standing_002.csv
+│   │   │   └── ...
+│   │   ├── walking/                       # Walking activity recordings
+│   │   │   ├── walking_001.csv
+│   │   │   ├── walking_002.csv
+│   │   │   └── ...
+│   │   ├── jumping/                       # Jumping activity recordings
+│   │   │   ├── jumping_001.csv
+│   │   │   ├── jumping_002.csv
+│   │   │   └── ...
+│   │   └── still/                         # Still (no movement) recordings
+│   │       ├── still_001.csv
+│   │       ├── still_002.csv
+│   │       └── ...
+│   │
+│   └── member2/                           # Second team member's data
+│       ├── metadata.txt                   # Phone model, sampling rate info
+│       ├── standing/
+│       │   └── ...
+│       ├── walking/
+│       │   └── ...
+│       ├── jumping/
+│       │   └── ...
+│       └── still/
+│           └── ...
+│
+├── data_unseen/                           # Unseen test data (for evaluation)
+│   ├── member1/                           # Same structure as data/
+│   │   ├── metadata.txt
+│   │   ├── standing/
+│   │   ├── walking/
+│   │   ├── jumping/
+│   │   └── still/
+│   └── member2/
+│       └── ...
+│
+├── processed_data/                        # Processed and cleaned data
+│   ├── training_features.csv             # Extracted features for training
+│   ├── training_labels.csv               # Activity labels for training
+│   ├── test_features.csv                 # Extracted features for testing
+│   └── test_labels.csv                   # Activity labels for testing
+│
+├── notebooks/                             # Jupyter notebooks for analysis
+│   ├── 01_data_exploration.ipynb         # Initial data exploration
+│   ├── 02_feature_extraction.ipynb       # Feature engineering
+│   ├── 03_hmm_implementation.ipynb       # HMM model implementation
+│   ├── 04_model_evaluation.ipynb         # Model testing and evaluation
+│   └── 05_visualization.ipynb            # Results visualization
+│
+├── src/                                   # Source code modules
+│   ├── __init__.py
+│   ├── data_loader.py                    # Load and preprocess raw data
+│   ├── feature_extraction.py             # Time and frequency domain features
+│   ├── hmm_model.py                      # HMM implementation (Viterbi, Baum-Welch)
+│   ├── evaluation.py                     # Metrics calculation
+│   └── visualization.py                  # Plotting functions
+│
+├── models/                                # Saved trained models
+│   ├── hmm_model.pkl                     # Trained HMM model
+│   └── model_parameters.json             # Model hyperparameters
+│
+├── results/                               # Results and outputs
+│   ├── figures/                          # Generated plots
+│   │   ├── transition_matrix_heatmap.png
+│   │   ├── decoded_sequences.png
+│   │   ├── feature_distributions.png
+│   │   └── confusion_matrix.png
+│   ├── metrics/                          # Evaluation metrics
+│   │   ├── evaluation_results.csv
+│   │   └── confusion_matrix.csv
+│   └── predictions/                      # Model predictions
+│       └── predicted_sequences.csv
+│
+├── docs/                                  # Documentation
+│   ├── data_collection_guide.md          # Instructions for data collection
+│   ├── feature_descriptions.md           # Feature engineering documentation
+│   └── model_architecture.md             # HMM architecture documentation
+│
+├── scripts/                               # Standalone scripts
+│   ├── collect_data.py                   # Script to process sensor logger output
+│   ├── train_model.py                    # Training pipeline
+│   └── evaluate_model.py                 # Evaluation pipeline
+│
+├── .gitignore                            # Git ignore file
+├── requirements.txt                       # Python dependencies
+├── README.md                             # Project overview
+└── PROJECT_STRUCTURE.txt                 # This file
+
+================================================================================
+DATA FILE FORMAT REQUIREMENTS
+================================================================================
+
+Each CSV file should contain the following columns:
+- timestamp (or time)
+- accel_x
+- accel_y
+- accel_z
+- gyro_x
+- gyro_y
+- gyro_z
+
+Metadata.txt should contain:
+- Phone Model: [e.g., iPhone 14, Samsung Galaxy S21]
+- Sampling Rate: [e.g., 50 Hz, 100 Hz]
+- Date Collected: [YYYY-MM-DD]
+- Collector Name: [Team member name]
+
+================================================================================
+NAMING CONVENTIONS
+================================================================================
+
+1. Activity folders: lowercase (standing, walking, jumping, still)
+2. CSV files: activity_XXX.csv (where XXX is a 3-digit number)
+3. Member folders: member1, member2 (or use actual names if preferred)
+4. All Python files: lowercase with underscores (snake_case)
+5. All notebooks: numbered prefix for ordering
+
+================================================================================
+NOTES FOR TEAM COLLABORATION
+================================================================================
+
+1. Each team member should:
+   - Create their own folder under data/ with the same internal structure
+   - Fill in metadata.txt with their phone and sampling rate information
+   - Ensure CSV files follow the same column naming convention
+   - Aim for ~25 samples each (distributed across 4 activities)
+
+2. Before pushing to repo:
+   - Verify all CSV files are properly formatted
+   - Check that metadata.txt is filled out
+   - Ensure sampling rates are harmonized (discuss with team)
+
+3. For unseen data:
+   - Collect additional samples after initial model training
+   - Place in data_unseen/ folder with same structure
+   - Used for final model evaluation only
+
+================================================================================
