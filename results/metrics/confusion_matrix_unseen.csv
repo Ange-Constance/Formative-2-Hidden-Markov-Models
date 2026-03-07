@@ -1,0 +1,5 @@
+,jumping,standing,still,walking
+jumping,12,0,0,0
+standing,0,11,0,0
+still,0,12,0,0
+walking,9,1,0,0
