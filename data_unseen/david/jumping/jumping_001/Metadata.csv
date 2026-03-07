@@ -1,0 +1,2 @@
+version,device name,recording epoch time,recording time,recording timezone,platform,appVersion,device id,sensors,sampleRateMs,standardisation,platform version,fusion
+3,iPhone XR,1772808692183,2026-03-06_14-51-32,Africa/Kigali,ios,1.54,29cab680-c565-4810-b5f5-071b8c828cfd,Accelerometer|Annotation|AccelerometerUncalibrated,10||10,false,18.7.6,system
