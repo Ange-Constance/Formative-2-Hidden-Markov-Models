@@ -1,0 +1,17 @@
+# Metadata for David's Sensor Data
+
+Participant: David
+Phone Model: [TO BE FILLED]
+Android Version: [TO BE FILLED]
+Sensor App: [TO BE FILLED]
+Collection Date: March 6, 2026
+Restructured: 2026-03-07 12:14:03
+
+## Sampling Rates
+Accelerometer: [TO BE FILLED] Hz
+Gyroscope: [TO BE FILLED] Hz
+
+## Notes
+- Each recording contains sensor data for one activity session
+- Sensor data collected using phone IMU
+- Activities: standing, walking, jumping, still
