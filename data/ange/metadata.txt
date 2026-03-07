@@ -1,15 +1,15 @@
 # Metadata for Ange's Sensor Data
 
 Participant: Ange
-Phone Model: [TO BE FILLED]
-Android Version: [TO BE FILLED]
-Sensor App: [TO BE FILLED]
+Phone Model: iPhone 11
+iOS Version: 17.4.1
+Sensor App: Sensor Logger v1.54
 Collection Date: March 6, 2026
 Restructured: 2026-03-07 12:14:02
 
 ## Sampling Rates
-Accelerometer: [TO BE FILLED] Hz
-Gyroscope: [TO BE FILLED] Hz
+Accelerometer: 100 Hz (10ms sample interval)
+Gyroscope: 100 Hz (10ms sample interval)
 
 ## Notes
 - Each recording contains sensor data for one activity session
