@@ -1,0 +1,18 @@
+# Metadata for David's Sensor Data (Unseen Test Set)
+
+Participant: David
+Phone Model: iPhone X
+iOS Version: 16.7.14
+Sensor App: Sensor Logger v1.54
+Collection Date: March 6, 2026
+Restructured: 2026-03-07 12:14:02
+
+## Sampling Rates
+Accelerometer: 100 Hz (10ms sample interval)
+Gyroscope: 100 Hz (10ms sample interval)
+
+## Notes
+- Each recording contains sensor data for one activity session
+- Sensor data collected using phone IMU
+- Activities: standing, walking, jumping, still
+- This data is reserved for final model evaluation (unseen test set)
