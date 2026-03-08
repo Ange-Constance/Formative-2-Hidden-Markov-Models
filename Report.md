@@ -5,7 +5,7 @@
 **Authors:** David & Ange  
 **Date:** March 7, 2026  
 
----
+
 
 # Project Overview
 
@@ -20,7 +20,7 @@ The goal is to classify everyday activities such as:
 
 The system uses **accelerometer and gyroscope data** recorded from smartphones to detect these activities. A practical use case for this project is **elderly care monitoring**, where smartphones can help detect unusual movements or potential fall risks in a non‑intrusive way.
 
----
+
 
 # Background and Motivation
 
@@ -28,7 +28,7 @@ Human Activity Recognition (HAR) is widely used in health monitoring, fitness tr
 
 Instead of using specialized wearable devices, this project demonstrates that **smartphones alone can be used to monitor activities** through built‑in sensors. By classifying activities such as walking, standing, or stillness, caregivers can gain insights into daily movement patterns and detect abnormal behavior.
 
----
+
 
 # Data Collection and Preprocessing
 
@@ -157,7 +157,7 @@ Process:
 2. Compute likelihood for each activity HMM
 3. Select activity with highest likelihood
 
----
+
 
 # Evaluation on Unseen Data
 
@@ -187,7 +187,7 @@ The project includes several visualizations:
 
 These visualizations help interpret how the HMM models activity patterns.
 
----
+
 
 # Project Structure
 
@@ -217,7 +217,7 @@ project/
     └── predictions/
 ```
 
----
+
 
 # Collaboration
 
@@ -228,7 +228,7 @@ project/
 
 GitHub commit history shows **balanced contributions from both members**.
 
----
+
 
 # Discussion and Conclusion
 
@@ -253,4 +253,4 @@ Future improvements:
 
 Overall, the project shows that **smartphone-based activity recognition can support practical applications such as elderly care monitoring and health tracking**.
 
----
+
