@@ -2,7 +2,7 @@
 
 A machine learning project that uses Hidden Markov Models (HMMs) to recognize human activities from smartphone sensor data (accelerometer and gyroscope).
 
-# Team participation Link
+## Team participation Link
 https://docs.google.com/spreadsheets/d/1HjCmb2G9lga-dbux6QeEvWHpoPyn4g-gjoi4uE4D3ps/edit?gid=0#gid=0
 
 ## Project Overview
